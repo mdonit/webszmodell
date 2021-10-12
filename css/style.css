@@ -11,5 +11,110 @@ html {
 }
 
 body {
-    background-color: rgb(214, 250, 250);
+    background-color: rgb(212, 212, 212);;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto 0 auto
+}
+
+.fejlec {
+    background: url(../img/logo.jpg);
+    height: 200px;
+
+}
+
+h1 {
+    padding-left: 200px;
+    padding-top: 30px;
+    font-size: 3.1rem;
+    color:white;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+ul::after {
+    content: "";
+    clear: both;
+    display: table;
+  } /* fontos ha float-tal lebegtetünk! */
+
+li {
+    float: left;
+    width: 12.5%;
+    text-align: center;
+    background:rgb(153, 59, 35);
+    border: 1px solid rgb(255, 234, 117);
+}
+
+a {
+    padding: 10px 0;
+    width: 100%;
+    display: inline-block;
+    color: #ddd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.kep1 {
+    float:left;
+    margin: 5px 5px 0 0;
+}
+
+.kep2 {
+    float:right;
+    margin: 0 0 0 5px;
+}
+
+.hasab {
+    float:left;
+    max-width: 50%;
+    padding:20px;
+    text-align: justify;
+    padding-top: 40px;
+}
+
+.bal {
+    padding-right: 10px;
+}
+
+.jobb {
+    padding-left: 10px;
+}
+
+.content {
+    background: white;
+}
+
+.content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h2 {
+    color: white;
+    background: rgb(212, 212, 212);
+    padding: 5px 20px;
+    margin-bottom: 30px;
+}
+
+.lablec {
+    background: rgb(255, 234, 117);
+    color: orange;
+    text-align: center;
+}
+
+.header {
+    position: sticky;
+    top: 0; /* ez kell, hogy ténylegesen ragadjon, meg kell mondani mihez ragadjon*/
 }
