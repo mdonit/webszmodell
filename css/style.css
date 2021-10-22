@@ -11,8 +11,16 @@ html {
 }
 
 body {
-    background-color: rgb(212, 212, 212);;
+    background-color: rgb(204,204,170,255);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 90px;
+    padding-bottom: 15px;
+    line-height: 160%;
+    font-size: 90%;
 }
 
 .container {
@@ -27,15 +35,24 @@ body {
 }
 
 h1 {
-    padding-left: 200px;
-    padding-top: 30px;
-    font-size: 3.1rem;
+    padding-left: 203px;
+    font-size: 3.5rem;
     color:white;
     text-transform: uppercase;
 }
 
+h2 {
+    color: white;
+    background: rgb(170,170,136,255);
+    padding: 1px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 75px;
+}
+
 ul {
     list-style: none;
+    float:left;
 }
 
 ul::after {
@@ -45,15 +62,16 @@ ul::after {
   } /* fontos ha float-tal lebegtetünk! */
 
 li {
-    float: left;
-    width: 12.5%;
+    float:none;
+    width: 280%;
     text-align: center;
-    background:rgb(153, 59, 35);
-    border: 1px solid rgb(255, 234, 117);
+    background:rgb(204,102,1,255);
+    border: 1px solid rgb(255,255,255);
+    border-left: none;
 }
 
-li:first-child {
-    border-left: none;
+li:first-child{
+    margin-top: 1px;
 }
 
 a {
@@ -70,33 +88,32 @@ a:hover {
 }
 
 .kep1 {
-    float:left;
-    margin: 5px 5px 0 0;
+    float:right;
+    margin: 15px 0 15px 20px;
 }
 
 .kep2 {
-    float:right;
-    margin: 0 0 0 5px;
+    float:left;
+    margin: 0 20px 10px 5px;
 }
 
 .hasab {
-    float:left;
-    max-width: 50%;
-    padding:20px;
     text-align: justify;
-    padding-top: 40px;
 }
 
 .bal {
-    padding-right: 10px;
+    float:left;
 }
 
 .jobb {
+    float:right;
+    max-width: 76%;
     padding-left: 10px;
 }
 
 .content {
     background: white;
+    padding-bottom: 20px;
 }
 
 .content::after {
@@ -105,20 +122,15 @@ a:hover {
     display: table;
 }
 
-h2 {
-    color: white;
-    background: rgb(212, 212, 212);
-    padding: 5px 20px;
-    margin-bottom: 30px;
-}
-
 .lablec {
-    background: rgb(255, 234, 117);
-    color: orange;
+    background: rgb(241,217,119);
+    color: rgb(209, 89, 9);
     text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .header {
-    position: sticky;
+    /*position: sticky;*/
     top: 0; /* ez kell, hogy ténylegesen ragadjon, meg kell mondani mihez ragadjon*/
 }
