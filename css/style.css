@@ -130,6 +130,10 @@ a:hover {
     margin-bottom: 90px;
 }
 
+.lablec p{
+    padding-right: 0%;
+}
+
 .header {
     /*position: sticky;*/
     top: 0; /* ez kell, hogy ténylegesen ragadjon, meg kell mondani mihez ragadjon*/
